@@ -1,0 +1,20 @@
+{
+  "name": "bookstore",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "bun --hot run index.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@elysiajs/html": "^1.0.2",
+    "@elysiajs/swagger": "^1.0.5",
+    "elysia": "^1.0.18",
+    "zod": "^3.23.8"
+  }
+}
