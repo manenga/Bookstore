@@ -1,4 +1,11 @@
 import { Database } from 'bun:sqlite';
+import { Schema, z } from 'zod';
+
+export const BookSchema: Schema = z.object({
+    id: z.number(),
+    name: z.string(),
+    author: z.string(),
+});
 
 export interface Book {
     id?: number;

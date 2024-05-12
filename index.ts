@@ -1,13 +1,7 @@
 import { Elysia, t } from 'elysia';
 import { html } from '@elysiajs/html'
-import { type Book, BooksDatabase } from './db.js';
-import * as z from 'zod';
+import { type Book, BookSchema, BooksDatabase } from './db.js';
 import { swagger } from "@elysiajs/swagger";
-
-const BookSchema = z.object({
-    name: z.string(),
-    author: z.string(),
-  });
 
 const app = new Elysia()
     .use(swagger())
