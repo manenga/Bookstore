@@ -1,6 +1,6 @@
 {
   "name": "bookstore",
-  "module": "index.ts",
+  "module": "app/index.ts",
   "type": "module",
   "scripts": {
     "start": "bun --hot run app/index.ts"
