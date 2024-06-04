@@ -48,6 +48,6 @@ const app = new Elysia()
           return { success: false };
         }
       }) 
-    .listen(26);
+    .listen(80);
 
 console.log(`Server started on ${app.server?.hostname}:${app.server?.port}`);
